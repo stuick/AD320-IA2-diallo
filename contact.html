@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Explorers</title>
+
+<!--Remy Sharp Shim --> 
+<!--[if lte IE 9]> 
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript" >
+</script> 
+<![endif]-->
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        body{
+            
+            
+            
+        }
+        
+        #wrapper{
+            width:870px;
+            margin:0 auto 0 auto;
+            background: #fcfcfc;
+            
+            
+        }
+        header{
+            height: 200px;
+            width:870px;
+            margin:0 auto 0 auto;
+        }
+        
+        header img{
+            width: 275px;
+            margin: 0 auto 0 auto;
+            display: block;
+            
+        }  
+        
+        
+        
+        main{
+            background: #feff98;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 520px;
+            float: left;
+            
+        }
+        aside{
+            background: #ff5757;
+            width: 320px;
+            float: right;
+        }
+        
+        aside img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        aside h2{
+            margin-left: 20px;
+        }
+        
+        aside p{
+            padding: 0 10px 10px 20px;
+        }
+        footer{
+            background: #ff5757;
+            height: 50px;
+            clear: both;
+            
+        }
+        
+        p{
+            
+        
+            
+        }
+        
+        form{
+            max-width: 580px;
+            margin-bottom: 10px;
+        }
+        
+        form ul{
+            margin-bottom: 10px;
+        }
+        
+        form li{
+            list-style: none;
+            margin-left: 10px;
+            margin-bottom: 4px;
+        }
+        
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type=text],
+        inpu[type=email]{
+            height: 20px;
+            width: 98%;
+            margin-bottom: 10px;
+        }
+        
+        
+        
+        input[type=radio],
+        input[type=checkbox]{
+            margin-right: 5px;
+            
+        }
+        
+        textarea{
+            width: 98%;
+            margin-bottom: 10px;
+            resize:none;
+        }
+       
+        
+        fieldset{
+            padding: 10px;
+            border:1px solid red;
+        }
+        
+        legend{
+            font-size: 1.4em;
+            padding:8px;
+            
+        }
+        
+        footer{
+            height: 50px;    
+            clear: both;
+            line-height: 50px;
+            border-top: 1px dotted;
+
+        }
+        footer li{
+            float: left;
+            list-style-type: none;
+            margin: 0 40px 0 40px;
+            font-size: .875em;
+            color:#666;    
+        }
+
+        footer ul{
+            margin-left: 0;
+        }
+
+        footer a{
+            color:#666;
+        }
+
+        footer img{
+            width: 30px;
+        }
+    
+    </style>
+    
+    
+</head>
+
+<body>
+    
+    <header>
+        <img src="images/logo.jpg" alt="happyBus">
+        
+    
+    </header>
+    
+    <div id="wrapper">
+        
+        <main>
+            <h1>Explorers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget elit sit amet justo mollis maximus quis non sem. Mauris lacinia consequat velit, id tristique diam fermentum ut. Nunc a risus sed ipsum malesuada rutrum. Nunc vehicula dignissim porttitor. Donec tempor lectus eget vulputate tincidunt. Nam dolor libero, lacinia sit amet tincidunt eu, auctor non odio. </p>
+            
+            <form action="formhandler.php" method="post">
+        <fieldset>
+            
+            <legend>Join us</legend>
+            <label>Name</label>
+            <input type="text" name="name">
+            
+            <label>Email</label>
+            <input type="email" name="email">
+            
+            <label>Gender</label>
+            <ul>
+                <li><input type="radio" name="gender" value="Female">Female</li>
+                <li><input type="radio" name="gender" value="maLE">Male</li>
+            </ul>
+            
+            <label>What type of weather do you like?</label>
+            <ul>
+                <li><input type="checkbox" name="stormy[]" value="stormy">Stormy</li>
+                <li><input type="checkbox" name="Rainy[]" value="Rainy">Rainy</li>
+                <li><input type="checkbox" name="Moderate[]" value="Moderate">Moderate</li>
+                <li><input type="checkbox" name="Clear[]" value="Clear">Clear</li>
+                <li><input type="checkbox" name="Cloudy[]" value="Cloudy">Cloudy</li>
+                <li><input type="checkbox" name="Snowy[]" value="Snowy">Cloudy</li>
+            </ul>
+            
+            <label>Please Share your best travelling experience</label>
+            <textarea name="comments" rows="10"></textarea>
+            
+            <input type="submit" value="Apply">
+        </fieldset>   
+    </form>
+        
+        </main>
+        
+        <aside>
+            <img src="images/family.jpg" alt="Happy family">
+            <h2>Did you know ?</h2>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget elit sit amet justo mollis maximus quis non sem. Mauris lacinia consequat velit, id tristique diam fermentum ut. Nunc a risus sed ipsum malesuada rutrum. Nunc vehicula dignissim porttitor. Donec tempor lectus eget vulputate tincidunt. Nam dolor libero, lacinia sit amet tincidunt eu, auctor non odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget elit sit amet justo mollis maximus quis non sem. Mauris lacinia consequat velit, id tristique diam fermentum ut.</p>
+        
+        </aside>
+        
+        <footer>
+            <ul>
+                <li>copyright 2018 &copy;</li>
+                <li>All rights reserved</li>
+                <li><a href="../index.html">Stuick Design</a></li>
+                <li><a href="https://validator.w3.org/check?uri=referer" target="_blank"><img src="images/validate.png" alt="validator"></a></li>
+            </ul>
+        </footer>
+    
+    </div><!--End wrapper-->
+    
+</body>
+</html>
