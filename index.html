@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Explorers</title>
+    <script src="js/script.js"></script>
 
 <!--Remy Sharp Shim --> 
 <!--[if lte IE 9]> 
@@ -148,25 +149,25 @@
             <h1>Explorers</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget elit sit amet justo mollis maximus quis non sem. Mauris lacinia consequat velit, id tristique diam fermentum ut. Nunc a risus sed ipsum malesuada rutrum. Nunc vehicula dignissim porttitor. Donec tempor lectus eget vulputate tincidunt. Nam dolor libero, lacinia sit amet tincidunt eu, auctor non odio. </p>
             
-            <form action="formhandler.php" method="post">
+            <form action="popo.php" method="GET">
         <fieldset>
             
             <legend>Join us</legend>
-            <label>Name</label>
-            <input type="text" name="name">
+            <label>Name *</label>
+            <input type="text" id="name">
             
-            <label>Email</label>
-            <input type="email" name="email">           
+            <label>Email *</label>
+            <input type="email" id="email">           
             
             <label>Phone</label>
-            <input type="text" name="phone">
+            <input type="text" id="phone">
             
             <label>State of residence</label>
-            <input type="email" name="state">
+            <input type="text" id="state">
             
             <label></label>
-            <input type="submit" value="Apply">
-            
+            <input onClick="return validate()" type="submit" value="Apply">
+                        
         </fieldset>   
     </form>
         
